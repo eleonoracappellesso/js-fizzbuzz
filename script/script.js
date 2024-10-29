@@ -10,6 +10,9 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 // creo un ciclo per stampare i numeri da 1 a 100
 
 for (let i = 1; i <= 100; i++) {
-
+// verifico quali numeri sono divisibili per 3 e per 5
+if (i % 3 === 0 && i % 5 === 0) {
+    console.log('FizzBuzz');
+}
     console.log(i);
 }
