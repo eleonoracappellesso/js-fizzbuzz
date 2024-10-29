@@ -11,6 +11,7 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 const maxNumber = 100;
 
+/* 
 for (let i = 1; i <= maxNumber; i++) {
     // verifico se i è divisibile per 3
     if (i % 3 === 0) {
@@ -21,6 +22,20 @@ for (let i = 1; i <= maxNumber; i++) {
         }
     } else if (i % 5 === 0) { // verifico se è divisibile per 5
         console.log('Buzz');  // output se divisibile solo per 5
+    } else {
+        console.log(i); // output se non divisibile ne per 3 ne per 5
+    }
+}
+    */
+
+
+for (let i = 1; i <= maxNumber; i++) {
+    if (i % 3 === 0 && i % 5 === 0) { // verifico se i è divisibile sia per 3 che per 5
+        console.log('FizzBuzz');
+    } else if (i % 3 === 0) { // verifico se è divisibile solo per 3
+        console.log('Fizz');
+    } else if (i % 5 === 0) { // verifico se è divisibile solo per 5
+        console.log('Buzz');
     } else {
         console.log(i); // output se non divisibile ne per 3 ne per 5
     }
